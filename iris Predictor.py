@@ -14,10 +14,10 @@ flower_info = {
 
 #Loading the dataset
 column_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class']
-df = pd.read_csv(r'*Enter your path here for the DATASET files*', header=None, names=column_names)
+df = pd.read_csv(r'C:\Pyt Files\Projects\iris Predictor\Data\iris.data', header = None, names = column_names)
 
 # Taking input from the user
-print("\nWelcome to the Iris Predictor!")
+print("Welcome to the Iris Predictor!")
 
 print("Please Enter the following details:")
 sepal_length = float(input("Sepal Length (cm): "))
@@ -38,7 +38,7 @@ Y = df['class_encoded']
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
 
 # Training the KNN model
-KNN = KNeighborsClassifier(n_neighbors=3)
+KNN = KNeighborsClassifier(n_neighbors = 3)
 KNN.fit(X_train, Y_train)
 
 # Predict and evaluating the model
@@ -53,11 +53,11 @@ print("="*25)
 # Showing accuracy of the model
 Y_pred = KNN.predict(X_test)
 accuracy = accuracy_score(Y_test, Y_pred)
-print(f"\nModel Accuracy: {accuracy * 100:.2f}%\n\n")
+print(f"\nModel Accuracy: {accuracy * 100:.2f}%")
 
 # Visualizing the data
 df['class_name'] = encoder.inverse_transform(df['class_encoded'])
-plt.figure(figsize=(10, 6))
+plt.figure(figsize = (10, 6))
 sns.scatterplot(data = df, x = 'petal_length', y = 'petal_width', hue = 'class_name', palette = 'Set2' , s = 70)
 plt.scatter(petal_length, petal_width, color='black', marker = 'X', s = 200, label = 'Your Flower')
 
