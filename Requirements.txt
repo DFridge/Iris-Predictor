@@ -1,0 +1,6 @@
+These Python libraries should be installed in the system in order to run the program
+
+pandas
+matplotlib
+seaborn
+scikit-learn
