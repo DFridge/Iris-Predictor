@@ -2,7 +2,7 @@
 
 A simple Machine Learning program that predicts the species of an Iris flower based on its physical features: sepal length, sepal width, petal length, and petal width.
 
-This project uses the **K-Nearest Neighbors (KNN) algorithm to classify the flower into one of the three Iris species:
+This project uses the K-Nearest Neighbors (KNN) algorithm to classify the flower into one of the three Iris species:
 - Iris-setosa
 - Iris-versicolor
 - Iris-virginica
