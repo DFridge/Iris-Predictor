@@ -1,0 +1,1 @@
+Simple Machine Learning project that predicts the type of Iris flower based on its attributes, such as petal and sepal length and width. The model is trained using the k-Nearest Neighbors (KNN) algorithm to analyze the input features and accurately classify the flower into one of the Iris species.
