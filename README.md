@@ -17,4 +17,4 @@ This project uses the K-Nearest Neighbors (KNN) algorithm to classify the flower
 
 📁 Dataset
 
-The dataset file `iris.data` is located in:
+The data of program is located in `iris.data` File
