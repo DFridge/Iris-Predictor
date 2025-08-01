@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score, confusion_matrix
 
 #Loading the dataset
 column_names = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width', 'class']
-df = pd.read_csv(r'C:\Pyt Files\Projects\iris Predictor\Data\iris.data', header=None, names=column_names)
+df = pd.read_csv(r'*Path of the Dataset should be Defined here*', header=None, names=column_names)
 
 # Taking input from the user
 print("Welcome to the Iris Predictor!")
